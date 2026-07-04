@@ -4,7 +4,7 @@ namespace JustAnotherWednesday.Data;
 
 public static class Fibonacci
 {
-    public static readonly Dictionary<Scenario, int> Scenario = new()
+    public static readonly Dictionary<Scenario, int> ScenarioMap = new()
     {
         { Scenario.PrintedMoney, 1 },
         { Scenario.Redistributed, 2 },
@@ -15,7 +15,7 @@ public static class Fibonacci
         { Scenario.LateBubble, 21 }
     };
 
-    public static readonly Dictionary<Role, int> Role = new()
+    public static readonly Dictionary<Role, int> RoleMap = new()
     {
         { Role.Striver, 34 },
         { Role.Landlord, 55 },
@@ -25,7 +25,7 @@ public static class Fibonacci
         { Role.ShopOwner, 377 }
     };
 
-    public static readonly Dictionary<Location, int> Location = new()
+    public static readonly Dictionary<Location, int> LocationMap = new()
     {
         { Location.HighCostCity, 610 },
         { Location.MidCostCity, 987 },
@@ -35,7 +35,7 @@ public static class Fibonacci
         { Location.IsolatedIsland, 6765 }
     };
 
-    public static readonly Dictionary<GlobalTime, int> GlobalTime = new()
+    public static readonly Dictionary<GlobalTime, int> GlobalTimeMap = new()
     {
         { GlobalTime.SyncUTC, 10946 },
         { GlobalTime.SyncLocal, 17711 },
@@ -44,14 +44,14 @@ public static class Fibonacci
         { GlobalTime.Random, 75025 }
     };
 
-    public static readonly Dictionary<Option, int> Option = new()
+    public static readonly Dictionary<Option, int> OptionMap = new()
     {
         { Option.A, 121393 },
         { Option.B, 196418 },
         { Option.C, 317811 }
     };
 
-    public static readonly Dictionary<Action, int> Action = new()
+    public static readonly Dictionary<Action, int> ActionMap = new()
     {
         { Action.BuyRealEstate, 514229 },
         { Action.BuyGold, 832040 },

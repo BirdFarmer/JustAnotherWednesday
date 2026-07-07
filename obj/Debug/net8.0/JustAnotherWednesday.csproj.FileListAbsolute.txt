@@ -1,0 +1,15 @@
+C:\Users\uwcli\JustAnotherWednesday\bin\Debug\net8.0\JustAnotherWednesday.exe
+C:\Users\uwcli\JustAnotherWednesday\bin\Debug\net8.0\JustAnotherWednesday.deps.json
+C:\Users\uwcli\JustAnotherWednesday\bin\Debug\net8.0\JustAnotherWednesday.runtimeconfig.json
+C:\Users\uwcli\JustAnotherWednesday\bin\Debug\net8.0\JustAnotherWednesday.dll
+C:\Users\uwcli\JustAnotherWednesday\bin\Debug\net8.0\JustAnotherWednesday.pdb
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.AssemblyInfoInputs.cache
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.AssemblyInfo.cs
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.csproj.CoreCompileInputs.cache
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.sourcelink.json
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.dll
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\refint\JustAnotherWednesday.dll
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.pdb
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\JustAnotherWednesday.genruntimeconfig.cache
+C:\Users\uwcli\JustAnotherWednesday\obj\Debug\net8.0\ref\JustAnotherWednesday.dll

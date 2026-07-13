@@ -69,7 +69,30 @@ public static class WorldTimeline
         var day = OptionToDayIndex(option);
         double nominal = OptionToNominal(option);
         var mult = GetPriceMultiplier(scenario, day);
-        return nominal * mult; // purchasing power in nominal currency units
+        // Apply scenario-specific cash multipliers for early (A) and late (C) cash
+        double scenarioFactor = 1.0;
+        if (option == Option.A)
+        {
+            scenarioFactor = scenario switch
+            {
+                Scenario.PrintedMoney => 2.0,
+                Scenario.TribalCollapse => 1.8,
+                Scenario.ScorchedEarth => 1.5,
+                _ => 1.0
+            };
+        }
+        else if (option == Option.C)
+        {
+            scenarioFactor = scenario switch
+            {
+                Scenario.PrintedMoney => 0.3,
+                Scenario.TribalCollapse => 0.4,
+                Scenario.ScorchedEarth => 0.5,
+                _ => 1.0
+            };
+        }
+
+        return nominal * mult * scenarioFactor; // purchasing power in nominal currency units
     }
 
     public static double GetActionEffectiveness(Action action, Scenario scenario, int dayIndex)
@@ -95,12 +118,15 @@ public static class WorldTimeline
         // Heuristic: effectiveness scales inversely with price multiplier for HoldCash, and proportional for assets
         double modifier = action switch
         {
-            Action.BuyGold => 1.0 + (1.0 - priceMult),
-            Action.BuyRealEstate => 1.0 + (priceMult - 1.0) * 0.5,
-            Action.BuyStocks => 1.0 + (priceMult - 1.0) * 0.4,
-            Action.HoldCash => 1.0 / Math.Max(0.1, priceMult),
+            Action.BuyGold => 1.0 + (1.0 - priceMult) * 0.8,
+            Action.BuyRealEstate => 1.0 + (priceMult - 1.0) * 0.25,
+            Action.BuyStocks => 1.0 + (priceMult - 1.0) * 0.2,
+            Action.HoldCash => 1.0 / Math.Max(0.2, priceMult),
             _ => 1.0
         };
+
+        // Cap modifier to a reasonable range to avoid extreme multipliers
+        modifier = Math.Max(0.1, Math.Min(modifier, 3.0));
 
         return Math.Max(0.0, baseEff * modifier);
     }

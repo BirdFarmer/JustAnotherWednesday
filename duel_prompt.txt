@@ -1,0 +1,25 @@
+**The Wednesday Dilemma: One Month Later**
+Scenario: ScorchedEarth - Conflicts escalate, infrastructure is destroyed and supply chains fail.
+The player is the only one who knew about the event on Monday morning.
+Local time: 8 AM Monday morning in Faroe Islands, Denmark.
+Local infrastructure: Very limited infrastructure. No local stock exchange. Internet is expensive satellite-only. One small bank or none at all. Supply chains are irregular. Self-sufficiency is key.
+
+The Player:
+Gender: Male
+Role: ShopOwner
+Location: Faroe Islands, Denmark
+Action: EssentialSupplies
+Option: C (received money on next Monday (5 days late, $2M))
+
+Instructions:
+1. Write a short realistic story of 2-3 paragraphs showing how this player's choices played out over the following month in the given scenario.
+2. Emphasize that the player had the advantage of being the first to know – they could act before others.
+3. Focus on believable human details, motivations, and concrete events tied to the scenario, location, and local constraints.
+4. End with a clear judgment: did the player survive, thrive, or fail? Explain why.
+
+Format your response exactly like this:
+Story:
+[story text]
+
+Judgment:
+[Survived / Thrived / Failed] - [brief explanation]
